@@ -1,0 +1,53 @@
+/* src/components/Contacto.css */
+.contacto-container {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .contacto-container h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .iconos-contacto {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .icono {
+    font-size: 60px;
+    transition: transform 0.3s;
+  }
+  
+  .icono.instagram {
+    color: #e1306c;
+  }
+  
+  .icono.email {
+    color: #0072c6;
+  }
+  
+  .icono.github {
+    color: #333;
+  }
+  
+  .icono.youtube {
+    color: #ff0000;
+  }
+  
+  .icono:hover {
+    transform: scale(1.2);
+  }
+  
+  @media (max-width: 600px) {
+    .iconos-contacto {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .icono {
+      font-size: 50px;
+    }
+  }
+  
