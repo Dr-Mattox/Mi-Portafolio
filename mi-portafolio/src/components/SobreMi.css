@@ -1,0 +1,55 @@
+/* src/components/SobreMi.css */
+
+/* Contenedor principal */
+.sobre-mi-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Estilos para la foto */
+  .foto-perfil {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid #ffffff;
+  }
+  
+  /* Contenedor del texto */
+  .texto-sobre-mi {
+    max-width: 800px;
+    background: linear-gradient(135deg, #f3ec78, #af4261);
+    padding: 20px;
+    border-radius: 10px;
+    color: #000000;
+    text-align: justify;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Diseño para pantallas grandes */
+  @media (min-width: 768px) {
+    .sobre-mi-container {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    .foto-perfil {
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+  
+    .texto-sobre-mi {
+      flex: 1;
+    }
+  }
+  
+  /* Ajustes para dispositivos móviles */
+  @media (max-width: 767px) {
+    .texto-sobre-mi {
+      margin: 0 10px;
+    }
+  }
+  
